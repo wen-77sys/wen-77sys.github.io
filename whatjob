@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+
+<title>我適合什麼工作？工程師性向測驗分析｜QE PE RD EE 職涯方向</title>
+
+<meta name="description" content="免費分析你適合什麼工作，透過工程師性向測驗了解QE、PE、RD、EE適合的職涯方向。適合學生與轉職者。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3899678188533569"
+ crossorigin="anonymous"></script>
+
+<style>
+body{
+  font-family:Arial;
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+  background:#f5f7fa;
+  line-height:1.7;
+}
+
+.header{
+  background:linear-gradient(135deg,#2a5298,#1e3c72);
+  color:white;
+  padding:30px;
+  border-radius:12px;
+  text-align:center;
+}
+
+.box{
+  background:white;
+  padding:20px;
+  margin-top:20px;
+  border-radius:12px;
+}
+
+a{
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 15px;
+  background:#2a5298;
+  color:white;
+  border-radius:8px;
+  text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h1>我適合什麼工作？工程師性向測驗（QE / PE / RD / EE）</h1>
+<p>工程師性向測驗分析（QE / PE / RD / EE）</p>
+</div>
+
+<div class="box">
+<h2>🔍 你適合什麼工作？</h2>
+<p>
+很多人會問「我適合什麼工作？」尤其是學生與轉職者，在選擇職涯方向時容易迷惘。
+透過工程師性向測驗，可以快速分析你適合的職業類型，例如品質工程師(QE)、製程工程師(PE)、研發工程師(RD)與設備工程師(EE)。
+</p>
+</div>
+
+<div class="box">
+<h2>📌 常見搜尋問題</h2>
+<p>我適合什麼工作？</p>
+<p>工程師適合哪一種？</p>
+<p>QE PE RD EE 差在哪？</p>
+<p>職涯方向怎麼選？</p>
+</div>
+
+<div class="box">
+<h2>🧠 四種工程師類型</h2>
+<ul>
+<li>QE：分析數據、找問題原因</li>
+<li>PE：改善流程、提升效率</li>
+<li>RD：產品設計與創新</li>
+<li>EE：設備維修與現場處理</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>🎯 適合誰？</h2>
+<ul>
+<li>學生選科系</li>
+<li>剛畢業找工作</li>
+<li>想轉職工程師</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>🚀 建議</h2>
+<p>如果不確定方向，可以先做測驗再判斷適合職業。</p>
+</div>
+
+<div class="box">
+<h2>❓ 常見問題（FAQ）</h2>
+
+<h3>我適合什麼工作？</h3>
+<p>透過工程師性向測驗可以分析職涯方向。</p>
+
+<h3>工程師 QE PE RD EE 差在哪？</h3>
+<p>分別代表品質、製程、研發與設備工程師。</p>
+
+<h3>學生適合做這個測驗嗎？</h3>
+<p>適合，可以用來選科系或職涯方向。</p>
+</div>
+
+<div class="box">
+<h2>🚀 開始測驗</h2>
+<a href="index.html">👉 開始工程師性向測驗</a>
+<a href="engineer-types.html">👉 工程師類型說明</a>
+<a href="engineer-salary-comparison.html">👉 工程師薪資比較</a>
+</div>
+
+<a href="index.html">← 回測驗</a>
+
+</body>
+</html>

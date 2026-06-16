@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+
+<title>工程師薪水比較｜QE PE RD EE 薪資排行分析</title>
+
+<meta name="description" content="比較QE、PE、RD、EE工程師薪水與發展性，了解不同工程師職涯收入差異與前景。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3899678188533569"
+ crossorigin="anonymous"></script>
+
+<style>
+body{font-family:Arial;max-width:900px;margin:auto;padding:20px;background:#f5f7fa;line-height:1.7;}
+.header{background:linear-gradient(135deg,#2a5298,#1e3c72);color:white;padding:30px;border-radius:12px;text-align:center;}
+.box{background:white;padding:20px;margin-top:20px;border-radius:12px;}
+table{width:100%;border-collapse:collapse;background:white;}
+th,td{border:1px solid #ddd;padding:10px;text-align:center;}
+th{background:#2a5298;color:white;}
+a{display:inline-block;margin-top:15px;padding:10px 15px;background:#2a5298;color:white;border-radius:8px;text-decoration:none;}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h1>工程師薪水比較</h1>
+<p>QE / PE / RD / EE 薪資分析</p>
+</div>
+
+<div class="box">
+<h2>💰 工程師薪水排行</h2>
+
+<table>
+<tr>
+<th>職位</th>
+<th>薪水範圍</th>
+<th>說明</th>
+</tr>
+
+<tr>
+<td>RD</td>
+<td>4.5萬～10萬+</td>
+<td>薪資最高但門檻較高</td>
+</tr>
+
+<tr>
+<td>QE</td>
+<td>3.5～8萬</td>
+<td>穩定成長</td>
+</tr>
+
+<tr>
+<td>PE</td>
+<td>3.8～7萬</td>
+<td>中等穩定</td>
+</tr>
+
+<tr>
+<td>EE</td>
+<td>3.7～8萬</td>
+<td>輪班可能加薪</td>
+</tr>
+</table>
+
+</div>
+
+<div class="box">
+<h2>📈 結論</h2>
+<p>
+RD薪資最高，但QE/PE/EE更容易進入，適合不同個性的人。
+</p>
+</div>
+
+<div class="box">
+<h2>🎯 建議</h2>
+<ul>
+<li>想穩定 → QE / PE</li>
+<li>想高薪 → RD</li>
+<li>想動手 → EE</li>
+</ul>
+</div>
+
+<a href="index.html">← 回測驗</a>
+
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+
+<title>工程師職涯測驗｜我適合什麼工作？QE / PE / RD / EE 性向分析</title>
+
+<meta name="description" content="免費工程師職涯測驗（20題），快速分析你適合品質工程師(QE)、製程工程師(PE)、研發工程師(RD)、設備工程師(EE)。適合學生、轉職與求職方向參考。">
+
+<meta name="keywords" content="工程師測驗, 職涯測驗, 我適合什麼工作, QE PE RD EE, 品質工程師, 製程工程師, 研發工程師, 設備工程師, 性向測驗">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="google-site-verification" content="google85207e0cc7cca3dc" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="工程師職涯測驗｜3分鐘找到你的工程師類型">
+<meta property="og:description" content="20題免費測驗，快速分析你適合QE/PE/RD/EE工程師類型">
+<meta property="og:type" content="website">
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3899678188533569"
+ crossorigin="anonymous"></script>
+
+<style>
+body{
+    font-family:Arial;
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+    background:#f5f7fa;
+    line-height:1.6;
+}
+
+h1{text-align:center;}
+
+.hero{
+    background:linear-gradient(135deg,#2a5298,#1e3c72);
+    color:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.box{
+    background:white;
+    padding:20px;
+    margin-top:15px;
+    border-radius:10px;
+}
+
+a.button{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 18px;
+    background:#2a5298;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+a.button:hover{
+    background:#1e3c72;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+<h1>🔧 工程師職涯測驗</h1>
+<p>20題快速分析你適合的工程師類型（QE / PE / RD / EE）</p>
+<a class="button" href="index.html#quiz">開始測驗</a>
+</div>
+
+<!-- SEO主內容區 -->
+<div class="box">
+<h2>你適合什麼工作？先做工程師性向測驗</h2>
+
+<p>
+這是一個免費的職涯測驗工具，透過20個問題分析你的工作傾向，
+幫助你判斷是否適合以下工程師職位：
+</p>
+
+<ul>
+<li>📊 品質工程師 QE（數據分析 / SPC / CPK）</li>
+<li>🏭 製程工程師 PE（流程改善 / 生產效率）</li>
+<li>🚀 研發工程師 RD（創新 / 設計 / 開發）</li>
+<li>⚙️ 設備工程師 EE（機台 / 維修 / 現場）</li>
+</ul>
+</div>
+
+<!-- 測驗區 -->
+<div id="quiz"></div>
+
+<button onclick="showResult()">查看結果</button>
+<div id="msg" style="color:red;font-weight:bold;"></div>
+
+<!-- SEO延伸 -->
+<div class="box">
+<h2>工程師職涯選擇指南</h2>
+
+<p>
+很多學生與轉職者常會問：「我適合什麼工作？」
+透過性向測驗可以快速了解你的職涯方向，
+避免選錯科系或職位。
+</p>
+
+<p>
+如果你偏向分析型思考，可能適合QE；
+如果你喜歡改善流程，可能適合PE；
+如果你喜歡創新設計，可能適合RD；
+如果你喜歡動手解決問題，可能適合EE。
+</p>
+</div>
+
+<script>
+// ===== 每題不同情境 + 不同選項 =====
+const questions = [
+{
+q:"作業或結果怪怪的，你會怎麼處理？",
+a:[
+["我會先把資料或狀況整理清楚，再找出問題來源","QE"],
+["我會回頭檢查每個步驟，看流程哪裡出了問題","PE"],
+["我會想是不是有更好的做法或新的解法","RD"],
+["我會先動手處理當下的問題，讓事情先恢復正常","EE"]
+]
+},
+{
+q:"事情卡住做不下去時，你通常怎麼做？",
+a:[
+["先冷靜分析目前狀況，找出卡住的原因","QE"],
+["重新檢查流程，有沒有哪一步可以調整","PE"],
+["換個角度思考，看能不能找到新方法","RD"],
+["先直接動手試著解決，邊做邊調整","EE"]
+]
+},
+{
+q:"如果一直重複出現同樣問題，你會？",
+a:[
+["把過去紀錄拿出來分析，看模式在哪裡","QE"],
+["想辦法優化流程，避免同樣問題再發生","PE"],
+["試著設計不同的方式來解決","RD"],
+["先把當下問題處理掉再說","EE"]
+]
+},
+{
+q:"你在做事情時最在意的是？",
+a:[
+["有沒有清楚的數據或根據可以判斷","QE"],
+["流程是不是順、會不會卡住","PE"],
+["有沒有新的想法或改進空間","RD"],
+["能不能快速把事情完成並解決問題","EE"]
+]
+},
+{
+q:"遇到突發狀況時，你的第一反應是？",
+a:[
+["先觀察狀況，找出問題真正原因","QE"],
+["先確認流程哪裡出問題造成影響","PE"],
+["先想有沒有其他替代方法","RD"],
+["先立刻處理現場狀況","EE"]
+]
+},
+{
+q:"朋友或同事遇到問題找你，你會？",
+a:[
+["幫他分析問題，找出真正原因","QE"],
+["幫他整理流程，讓問題更好理解","PE"],
+["給他一些不同想法或建議","RD"],
+["直接幫他處理或一起動手解決","EE"]
+]
+},
+{
+q:"你比較喜歡哪種工作方式？",
+a:[
+["需要思考、分析和找原因的工作","QE"],
+["有固定流程、可以優化的工作","PE"],
+["可以自由發想和創新的工作","RD"],
+["可以實際動手解決問題的工作","EE"]
+]
+},
+{
+q:"當結果跟預期不一樣時，你會？",
+a:[
+["回頭檢查每個數據或細節","QE"],
+["檢查流程是不是有哪一步出錯","PE"],
+["思考是不是方法可以換掉","RD"],
+["先想辦法把問題修正回來","EE"]
+]
+},
+{
+q:"你學習新東西時通常怎麼做？",
+a:[
+["先理解原理和背後的原因","QE"],
+["照著步驟一步一步學","PE"],
+["喜歡自己摸索不同方法","RD"],
+["直接做中學，邊操作邊學","EE"]
+]
+},
+{
+q:"你覺得工作中最重要的是？",
+a:[
+["判斷正確與否的依據要清楚","QE"],
+["流程要穩定、順暢","PE"],
+["要能持續改進或創新","RD"],
+["能快速解決現場問題","EE"]
+]
+},
+{
+q:"壓力很大時你通常怎麼做？",
+a:[
+["先分析問題來源在哪裡","QE"],
+["整理流程，找出壓力來源","PE"],
+["換個方式思考解法","RD"],
+["先把事情一件一件處理掉","EE"]
+]
+},
+{
+q:"你比較像哪一種人？",
+a:[
+["喜歡找原因、看細節的人","QE"],
+["做事有條理、重流程的人","PE"],
+["喜歡創意和新想法的人","RD"],
+["偏向實作、動手能力強的人","EE"]
+]
+},
+{
+q:"當問題一直解不開時，你會？",
+a:[
+["回去重新檢查所有資訊","QE"],
+["檢查流程哪裡可以改善","PE"],
+["換個完全不同的想法試試","RD"],
+["先做一個能用的版本再說","EE"]
+]
+},
+{
+q:"你比較擅長的事情是？",
+a:[
+["分析問題、找出原因","QE"],
+["整理流程、讓事情更順","PE"],
+["想新點子或創意方法","RD"],
+["實際動手處理問題","EE"]
+]
+},
+{
+q:"你在團隊中比較常扮演？",
+a:[
+["找問題根源的人","QE"],
+["優化流程的人","PE"],
+["提供想法的人","RD"],
+["負責執行的人","EE"]
+]
+},
+{
+q:"你做事情的習慣是？",
+a:[
+["先想清楚再行動","QE"],
+["照著流程穩定執行","PE"],
+["邊做邊調整想法","RD"],
+["想到就先做再說","EE"]
+]
+},
+{
+q:"遇到緊急狀況你會？",
+a:[
+["先分析狀況再決定","QE"],
+["確認流程影響範圍","PE"],
+["找替代方案","RD"],
+["直接處理當下問題","EE"]
+]
+},
+{
+q:"你理想的工作狀態是？",
+a:[
+["可以分析與解決問題","QE"],
+["流程清楚、穩定工作","PE"],
+["可以自由發想與創新","RD"],
+["可以直接動手做事情","EE"]
+]
+},
+{
+q:"你對錯誤的態度是？",
+a:[
+["一定要找出真正原因","QE"],
+["避免下次再發生","PE"],
+["當成改進機會","RD"],
+["先修好再說","EE"]
+]
+},
+{
+q:"最後，你覺得自己比較像？",
+a:[
+["思考分析型的人","QE"],
+["流程整理型的人","PE"],
+["創意發想型的人","RD"],
+["動手實作型的人","EE"]
+]
+}
+];
+
+// ===== 動態生成 =====
+let html="";
+
+for(let i=0;i<questions.length;i++){
+html+=`
+<div class="question">
+<p>${i+1}. ${questions[i].q}</p>
+`;
+
+questions[i].a.forEach(opt=>{
+html+=`
+<label>
+<input type="radio" name="q${i+1}" value="${opt[1]}">
+${opt[0]}
+</label><br>
+`;
+});
+
+html+=`</div>`;
+}
+
+document.getElementById("quiz").innerHTML=html;
+
+// ===== 計分 + 防呆 =====
+function showResult(){
+
+let score={QE:0,PE:0,RD:0,EE:0};
+
+for(let i=1;i<=questions.length;i++){
+let ans=document.querySelector('input[name="q'+i+'"]:checked');
+
+if(!ans){
+document.getElementById("msg").innerText="⚠️ 請完成所有題目";
+return;
+}
+
+score[ans.value]++;
+}
+
+let result=Object.keys(score).reduce((a,b)=>score[a]>score[b]?a:b);
+
+if(result==="QE") location.href="qe.html";
+if(result==="PE") location.href="pe.html";
+if(result==="RD") location.href="rd.html";
+if(result==="EE") location.href="ee.html";
+}
+
+</script>
+
+</body>
+</html>
