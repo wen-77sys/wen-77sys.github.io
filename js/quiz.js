@@ -128,6 +128,15 @@
           </div>
           <p class="pair-hint">把測驗傳給在意的人,看看你們是最速配還是死對頭 👀</p>`;
       }
+    } else if (result.match || result.clash) {
+      // 一般型測驗:題庫的結果可用 match / clash 欄位指定配對(值是另一個結果的 key)
+      const m = data.results[result.match], c = data.results[result.clash];
+      if (m || c) {
+        pairHtml = '<div class="pairs">' +
+          (m ? `<div class="pair"><div class="pair-tag">💘 最速配</div><div class="pair-type">${m.badge || result.match}</div><div class="pair-name">${m.title}</div></div>` : '') +
+          (c ? `<div class="pair"><div class="pair-tag">⚡ 死對頭</div><div class="pair-type">${c.badge || result.clash}</div><div class="pair-name">${c.title}</div></div>` : '') +
+          '</div><p class="pair-hint">把測驗傳給在意的人,看看你們是最速配還是死對頭 👀</p>';
+      }
     }
 
     const shareRaw = `我做了「${data.title}」,結果是「${result.title}」！你也來測測看： ${location.href}`;
