@@ -69,35 +69,67 @@
     const tally = {};
     answers.forEach(s => { if (s) tally[s] = (tally[s] || 0) + 1; });
 
-    let key;
+    let key, dims = null;
     if (data.type === 'dimensions') {
-      // 每個維度是一組互斥字母,例如 "EI" -> 比較 E 與 I 誰多
-      key = data.dimensions.map(pair => {
+      // 每個維度是一組互斥字母,例如 "EI" -> 比較 E 與 I 誰多,並算出百分比
+      dims = data.dimensions.map(pair => {
         const a = pair[0], b = pair[1];
-        return (tally[a] || 0) >= (tally[b] || 0) ? a : b;
-      }).join('');
+        const ca = tally[a] || 0, cb = tally[b] || 0;
+        const pa = (ca + cb) ? Math.round(ca / (ca + cb) * 100) : 50;
+        return { a, b, pa, win: ca >= cb ? a : b };
+      });
+      key = dims.map(d => d.win).join('');
     } else {
       // 一般型:取得票數最高的字母當結果 key
       key = Object.keys(tally).sort((x, y) => tally[y] - tally[x])[0];
     }
 
     const result = data.results[key] || { title: '神秘型', desc: '你的答案組合很獨特！' };
-    renderResult(key, result);
+    renderResult(key, result, dims);
   }
 
-  function renderResult(key, result) {
+  // 維度字母的中文標籤(題庫可用 labels 欄位覆寫)
+  const DIM_LABELS = { E: '外向', I: '內向', S: '實感', N: '直覺', T: '思考', F: '情感', J: '判斷', P: '感知' };
+
+  function renderResult(key, result, dims) {
     // dimensions 型(如 MBTI)顯示四字母;一般型可在題庫用 badge 欄位放表情符號
     const badge = result.badge || key;
-    const shareText = encodeURIComponent(`我做了「${data.title}」,結果是「${result.title}」！你也來測測看：`);
+    const lbl = ch => (data.labels && data.labels[ch]) || DIM_LABELS[ch] || ch;
+
+    // 維度百分比橫條(僅 dimensions 型)
+    let dimsHtml = '';
+    if (dims) {
+      dimsHtml = '<div class="dims">' + dims.map(d => {
+        const pb = 100 - d.pa;
+        const aWin = d.pa >= 50;
+        return `
+          <div class="dim-row">
+            <div class="dim-labels">
+              <span class="${aWin ? 'win' : ''}">${lbl(d.a)} ${d.a}・${d.pa}%</span>
+              <span class="${aWin ? '' : 'win'}">${pb}%・${d.b} ${lbl(d.b)}</span>
+            </div>
+            <div class="dim-bar${aWin ? '' : ' flip'}"><div style="width:${aWin ? d.pa : pb}%"></div></div>
+          </div>`;
+      }).join('') + '</div>';
+    }
+
+    const shareRaw = `我做了「${data.title}」,結果是「${result.title}」！你也來測測看： ${location.href}`;
     const shareUrl = encodeURIComponent(location.href);
+    const lineHref = 'https://line.me/R/share?text=' + encodeURIComponent(shareRaw);
+    const threadsHref = 'https://www.threads.net/intent/post?text=' + encodeURIComponent(shareRaw);
     root.innerHTML = `
       <div class="result">
         <div class="badge">${badge}</div>
         <h2>${result.title}</h2>
+        ${dimsHtml}
         <div class="desc">${result.desc}</div>
         <div class="actions">
-          <a class="btn" target="_blank" rel="noopener"
+          <a class="btn line" target="_blank" rel="noopener" href="${lineHref}">用 LINE 傳給朋友</a>
+          <a class="btn fb" target="_blank" rel="noopener"
              href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}">分享到 Facebook</a>
+          <a class="btn threads" target="_blank" rel="noopener" href="${threadsHref}">發到 Threads</a>
+        </div>
+        <div class="actions">
           <a class="btn secondary" href="quiz.html?id=${id}">再測一次</a>
           <a class="btn secondary" href="index.html">看其他測驗</a>
         </div>

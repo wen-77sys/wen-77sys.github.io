@@ -93,6 +93,18 @@ a:hover { text-decoration: underline; }
 
 /* Result */
 .result { background: var(--card); border-radius: 16px; padding: 28px 24px; box-shadow: var(--shadow); text-align: center; }
+.dims { margin: 20px 0 4px; display: grid; gap: 14px; text-align: left; }
+.dim-labels { display: flex; justify-content: space-between; font-size: .9rem; color: var(--muted); margin-bottom: 4px; }
+.dim-labels .win { color: var(--brand); font-weight: 700; }
+.dim-bar { height: 10px; background: var(--border); border-radius: 99px; overflow: hidden; }
+.dim-bar > div { height: 100%; background: var(--brand); border-radius: 99px; transition: width .5s; }
+.dim-bar.flip { transform: scaleX(-1); }
+.btn.line { background: #06c755; }
+.btn.line:hover { background: #05a94a; }
+.btn.fb { background: #1877f2; }
+.btn.fb:hover { background: #145fc4; }
+.btn.threads { background: #101010; }
+.btn.threads:hover { background: #2e2e2e; }
 .result .badge { font-size: 2.6rem; font-weight: 800; color: var(--brand); letter-spacing: 2px; }
 .result h2 { margin: 6px 0 4px; font-size: 1.5rem; }
 .result .desc { color: var(--text); text-align: left; margin: 18px 0; }
