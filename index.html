@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>心理測驗小站 — 免費 MBTI 與趣味測驗</title>
+  <meta name="description" content="免費線上心理測驗:MBTI 16型人格、趣味性格分析,一分鐘就知道結果,快來測測看！">
+
+  <!-- ===== Google AdSense（審核通過後把 ca-pub-XXXX 換成你的發布商 ID）===== -->
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+     crossorigin="anonymous"></script>
+  -->
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">🧠 心理測驗小站</a>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="about.html">關於</a>
+      <a href="privacy.html">隱私權</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>一分鐘,更懂自己一點</h1>
+      <p>免費線上心理測驗,測完立刻看結果,還能分享給朋友。</p>
+    </section>
+
+    <!-- ===== 廣告版位 1（頂部）===== -->
+    <div class="ad-slot" data-ad="top">
+      <span>廣告版位（審核通過後這裡會顯示 Google 廣告）</span>
+    </div>
+
+    <section id="quiz-list" class="quiz-grid">
+      <!-- 測驗清單由 js/list.js 依 data/quizzes.json 自動產生 -->
+    </section>
+
+    <section class="container">
+      <h2 style="margin:32px 0 4px">職涯測驗</h2>
+      <p style="color:var(--muted);margin-bottom:8px">不只認識性格，也幫你找方向。</p>
+    </section>
+    <section class="quiz-grid">
+      <a class="quiz-card" href="engineer.html">
+        <div class="emoji">⚙️</div>
+        <h3>工程師職涯性向測驗</h3>
+        <p>20 題情境分析，測出你適合品質、製程、研發還是設備工程師，附四種職位的完整介紹。</p>
+      </a>
+    </section>
+
+    <section class="container">
+      <h2 style="margin:32px 0 4px">閱讀文章</h2>
+      <p style="color:var(--muted);margin-bottom:8px">想更深入了解自己？這些文章帶你看懂測驗背後的心理學。</p>
+    </section>
+    <section class="quiz-grid">
+      <a class="quiz-card" href="articles/mbti-guide.html">
+        <div class="emoji">🧭</div>
+        <h3>MBTI 十六型人格完整解析</h3>
+        <p>四個維度、十六型特質一次看懂，教你怎麼找出自己的類型。</p>
+      </a>
+      <a class="quiz-card" href="articles/love-styles.html">
+        <div class="emoji">💘</div>
+        <h3>四種戀愛風格怎麼溝通</h3>
+        <p>熱情、細水、自由、忠誠——遇到衝突時，各自該怎麼好好說。</p>
+      </a>
+      <a class="quiz-card" href="articles/stress-signals.html">
+        <div class="emoji">🌡️</div>
+        <h3>長期壓力的 7 個身體警訊</h3>
+        <p>壓力不只在心裡，也在身體上。附上可以馬上做的調適方法。</p>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 心理測驗小站 ·
+      <a href="about.html">關於本站</a> ·
+      <a href="privacy.html">隱私權政策</a>
+    </p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/list.js"></script>
+</body>
+</html>

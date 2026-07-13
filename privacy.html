@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="UTF-8">
-<title>隱私權政策</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隱私權政策 — 心理測驗小站</title>
+  <meta name="description" content="心理測驗小站的隱私權政策與 Cookie 使用說明。">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="font-family:Arial;max-width:800px;margin:auto;padding:20px;">
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">🧠 心理測驗小站</a>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="about.html">關於</a>
+      <a href="privacy.html">隱私權</a>
+    </nav>
+  </header>
 
-<h1>隱私權政策</h1>
+  <main class="container article">
+    <h1>隱私權政策</h1>
+    <p>最後更新日期:<span id="upd"></span></p>
 
-<p>本網站（工程師職涯測驗）尊重使用者隱私。</p>   
+    <p>感謝你造訪「心理測驗小站」（網址 wen-77sys.github.io，包含心理測驗、工程師職涯測驗與相關文章等全部內容，以下稱「本站」）。本政策說明本站如何處理你的資料。</p>
 
-<h2>資料收集</h2>
-<p>本網站不會主動收集個人資料。</p>
+    <h2>我們收集的資訊</h2>
+    <p>本站的測驗在你的瀏覽器本機執行,<strong>不會將你的測驗答案上傳或儲存到伺服器</strong>。我們不會主動要求你提供姓名、電話等個人資料。</p>
 
-<h2>Cookies</h2>
-<p>本網站可能使用第三方服務（如 Google）來顯示廣告。</p>
+    <h2>Cookie 與第三方廣告</h2>
+    <p>本站使用 Google AdSense 投放廣告。Google 這類第三方廠商會使用 Cookie,依據你造訪本站及其他網站的紀錄來投放廣告。</p>
+    <ul>
+      <li>Google 使用廣告 Cookie,能依你先前的造訪內容,向你投放廣告。</li>
+      <li>你可以前往 <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google 廣告設定</a> 關閉個人化廣告。</li>
+      <li>你也可以到 <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">aboutads.info</a> 停用第三方廠商的 Cookie。</li>
+    </ul>
 
-<h2>第三方服務</h2>
-<p>未來可能使用 Google AdSense 顯示廣告。</p>
+    <h2>外部連結</h2>
+    <p>本站可能包含前往其他網站的連結,本站不對這些外部網站的隱私作法負責。</p>
 
-<h2>聯絡方式</h2>
-<p>如有問題請透過網站聯絡。</p>
+    <h2>政策變更</h2>
+    <p>本站保留隨時修改本政策的權利,變更後會更新本頁上方的日期。</p>
 
+    <h2>聯絡方式</h2>
+    <p>如對本政策有任何疑問,請來信:<a href="mailto:你的信箱@example.com">你的信箱@example.com</a>。</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 心理測驗小站 ·
+      <a href="about.html">關於本站</a> ·
+      <a href="privacy.html">隱私權政策</a>
+    </p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('upd').textContent = new Date().toISOString().slice(0,10);
+  </script>
 </body>
 </html>

@@ -1,0 +1,103 @@
+:root {
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --text: #22252b;
+  --muted: #6b7280;
+  --brand: #6c5ce7;
+  --brand-dark: #5847c9;
+  --border: #e5e7eb;
+  --shadow: 0 4px 20px rgba(0,0,0,.06);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", "Microsoft JhengHei", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header / Footer */
+.site-header {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 8px;
+  background: var(--card);
+  padding: 14px 20px;
+  box-shadow: var(--shadow);
+  position: sticky; top: 0; z-index: 10;
+}
+.logo { font-weight: 700; font-size: 1.15rem; color: var(--text); }
+.site-header nav a { margin-left: 16px; color: var(--muted); font-size: .95rem; }
+.site-footer {
+  text-align: center; padding: 28px 20px; color: var(--muted); font-size: .9rem;
+}
+
+/* Layout */
+.container { max-width: 760px; margin: 0 auto; padding: 24px 20px 40px; }
+.hero { text-align: center; padding: 24px 0 8px; }
+.hero h1 { font-size: 1.9rem; margin: 0 0 8px; }
+.hero p { color: var(--muted); margin: 0; }
+
+/* Quiz list grid */
+.quiz-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px; margin-top: 20px;
+}
+.quiz-card {
+  display: block; background: var(--card); border-radius: 16px;
+  padding: 22px 20px; box-shadow: var(--shadow);
+  border: 1px solid var(--border); transition: transform .15s, box-shadow .15s;
+  color: var(--text);
+}
+.quiz-card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,.1); text-decoration: none; }
+.quiz-card .emoji { font-size: 2rem; }
+.quiz-card h3 { margin: 10px 0 6px; font-size: 1.15rem; }
+.quiz-card p { margin: 0; color: var(--muted); font-size: .92rem; }
+
+/* Ad slots */
+.ad-slot {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 90px; margin: 24px 0;
+  background: repeating-linear-gradient(45deg, #eef0f6, #eef0f6 10px, #e7eaf3 10px, #e7eaf3 20px);
+  border: 1px dashed #c4c9d6; border-radius: 12px;
+  color: #9aa1b2; font-size: .85rem; text-align: center;
+}
+
+/* Quiz engine */
+.quiz-head { text-align: center; margin-bottom: 8px; }
+.quiz-head h1 { margin: 6px 0; font-size: 1.6rem; }
+.quiz-head p { color: var(--muted); margin: 0; }
+.progress { height: 8px; background: var(--border); border-radius: 99px; overflow: hidden; margin: 18px 0 24px; }
+.progress > div { height: 100%; width: 0; background: var(--brand); transition: width .3s; }
+
+.question { background: var(--card); border-radius: 16px; padding: 24px 22px; box-shadow: var(--shadow); }
+.question h2 { font-size: 1.2rem; margin: 0 0 18px; }
+.options { display: grid; gap: 12px; }
+.option {
+  text-align: left; padding: 14px 16px; border-radius: 12px;
+  border: 1.5px solid var(--border); background: #fbfbfe; cursor: pointer;
+  font-size: 1rem; font-family: inherit; color: var(--text); transition: all .12s;
+}
+.option:hover { border-color: var(--brand); background: #f3f1ff; }
+
+.btn {
+  display: inline-block; background: var(--brand); color: #fff; border: none;
+  padding: 12px 26px; border-radius: 99px; font-size: 1rem; font-family: inherit;
+  cursor: pointer; margin-top: 8px; transition: background .15s;
+}
+.btn:hover { background: var(--brand-dark); text-decoration: none; }
+.btn.secondary { background: #eef0f6; color: var(--text); }
+
+/* Result */
+.result { background: var(--card); border-radius: 16px; padding: 28px 24px; box-shadow: var(--shadow); text-align: center; }
+.result .badge { font-size: 2.6rem; font-weight: 800; color: var(--brand); letter-spacing: 2px; }
+.result h2 { margin: 6px 0 4px; font-size: 1.5rem; }
+.result .desc { color: var(--text); text-align: left; margin: 18px 0; }
+.result .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 14px; }
+
+.article h1 { font-size: 1.7rem; }
+.article h2 { font-size: 1.2rem; margin-top: 28px; }
+.loading { text-align: center; color: var(--muted); padding: 40px 0; }

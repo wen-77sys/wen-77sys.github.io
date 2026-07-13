@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>測驗進行中 — 心理測驗小站</title>
+  <meta name="description" content="免費線上心理測驗,快來測測看你是哪一型！">
+
+  <!-- ===== Google AdSense（審核通過後啟用，換成你的發布商 ID）===== -->
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+     crossorigin="anonymous"></script>
+  -->
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">🧠 心理測驗小站</a>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="about.html">關於</a>
+      <a href="privacy.html">隱私權</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div id="quiz-root">
+      <p class="loading">載入中…</p>
+    </div>
+
+    <!-- ===== 廣告版位（測驗頁底部 / 結果頁上方）===== -->
+    <div class="ad-slot" data-ad="result">
+      <span>廣告版位（審核通過後這裡會顯示 Google 廣告）</span>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 心理測驗小站 ·
+      <a href="about.html">關於本站</a> ·
+      <a href="privacy.html">隱私權政策</a>
+    </p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

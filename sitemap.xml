@@ -1,45 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<url>
-<loc>https://wen-77sys.github.io/</loc>
-</url>
-
-<url>
-<loc>https://wen-77sys.github.io/index.html</loc>
-</url>
-
-<url>
-<loc>https://wen-77sys.github.io/qe.html</loc>
-</url>
-
-<url>
-<loc>https://wen-77sys.github.io/pe.html</loc>
-</url>
-
-<url>
-<loc>https://wen-77sys.github.io/rd.html</loc>
-</url>
-
-<url>
-<loc>https://wen-77sys.github.io/ee.html</loc>
-</url>
-
-<url>
-<loc>https://wen-77sys.github.io/whatjob</loc>
-</url>
-
-<url>
-<loc>https://wen-77sys.github.io/engineertype</loc>
-</url>
-
-<url>
-<loc>https://wen-77sys.github.io/salary</loc>
-</url>
-
-<url>
-<loc>https://wen-77sys.github.io/privacy.html</loc>
-</url>
-
+  <url><loc>https://wen-77sys.github.io/</loc><lastmod>2026-07-13</lastmod></url>
+  <url><loc>https://wen-77sys.github.io/about.html</loc><lastmod>2026-07-13</lastmod></url>
+  <url><loc>https://wen-77sys.github.io/privacy.html</loc><lastmod>2026-07-13</lastmod></url>
+  <url><loc>https://wen-77sys.github.io/quiz.html?id=mbti</loc><lastmod>2026-07-13</lastmod></url>
+  <url><loc>https://wen-77sys.github.io/quiz.html?id=love</loc><lastmod>2026-07-13</lastmod></url>
+  <url><loc>https://wen-77sys.github.io/quiz.html?id=stress</loc><lastmod>2026-07-13</lastmod></url>
+  <url><loc>https://wen-77sys.github.io/articles/mbti-guide.html</loc><lastmod>2026-07-13</lastmod></url>
+  <url><loc>https://wen-77sys.github.io/articles/love-styles.html</loc><lastmod>2026-07-13</lastmod></url>
+  <url><loc>https://wen-77sys.github.io/articles/stress-signals.html</loc><lastmod>2026-07-13</lastmod></url>
+  <url><loc>https://wen-77sys.github.io/engineer.html</loc><lastmod>2026-07-13</lastmod></url>
+  <url><loc>https://wen-77sys.github.io/qe.html</loc><lastmod>2026-07-13</lastmod></url>
+  <url><loc>https://wen-77sys.github.io/pe.html</loc><lastmod>2026-07-13</lastmod></url>
+  <url><loc>https://wen-77sys.github.io/rd.html</loc><lastmod>2026-07-13</lastmod></url>
+  <url><loc>https://wen-77sys.github.io/ee.html</loc><lastmod>2026-07-13</lastmod></url>
+  <url><loc>https://wen-77sys.github.io/salary</loc><lastmod>2026-07-13</lastmod></url>
+  <url><loc>https://wen-77sys.github.io/whatjob</loc><lastmod>2026-07-13</lastmod></url>
+  <url><loc>https://wen-77sys.github.io/engineertype</loc><lastmod>2026-07-13</lastmod></url>
 </urlset>
